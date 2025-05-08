@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useInvoices } from '../../hooks/UseInvoices';
+import { useInvoices } from '../../hooks/useInvoices';
 
 const InvoicesList = () => {
   const { invoices, deleteInvoice } = useInvoices();
