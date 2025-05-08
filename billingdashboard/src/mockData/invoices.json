@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "invoiceNumber": "INV-001",
+      "client": "Flossy Arch",
+      "date": "2024-03-15",
+      "dueDate": "2024-04-15",
+      "total": 1500,
+      "status": "Paid",
+      "totalAmountReceived": 1500,
+      "paymentRecords": [
+        {
+          "id": "PR-001",
+          "paidBy": "Flossy Arch",
+          "datePaid": "2024-03-20",
+          "amountPaid": 1500,
+          "paymentMethod": "Bank Transfer",
+          "note": "Full payment received"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "invoiceNumber": "INV-002",
+      "client": "Janela Pencott",
+      "date": "2024-03-10",
+      "dueDate": "2024-04-10",
+      "total": 2500,
+      "status": "Partial",
+      "totalAmountReceived": 1000,
+      "paymentRecords": [
+        {
+          "id": "PR-002",
+          "paidBy": "Janela Pencott",
+          "datePaid": "2024-03-15",
+          "amountPaid": 1000,
+          "paymentMethod": "Credit Card",
+          "note": "Partial payment"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "invoiceNumber": "INV-003",
+      "client": "Peadar Paoloni",
+      "date": "2024-03-01",
+      "dueDate": "2024-03-31",
+      "total": 3000,
+      "status": "Unpaid",
+      "totalAmountReceived": 0,
+      "paymentRecords": []
+    }
+  ] 
