@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Typography, Grid, Container } from '@mui/material';
-import useInvoices from '../../hooks/UseInvoices';
+import useInvoices from '../../hooks/useInvoices';
 
 const ClientList = () => {
   const { invoices, isLoaded } = useInvoices();
