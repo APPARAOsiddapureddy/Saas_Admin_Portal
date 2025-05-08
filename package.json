@@ -1,9 +1,18 @@
 {
   "name": "saas",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "container",
+    "marketing",
+    "auth",
+    "dashboard",
+    "usermanagement",
+    "billingdashboard"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build --workspaces",
+    "start": "npm run start --workspaces"
   },
   "keywords": [],
   "author": "",
