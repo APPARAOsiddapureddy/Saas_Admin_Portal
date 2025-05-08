@@ -7,7 +7,7 @@ import Empty from '../svgIcons/Empty'
 import Chart from './Chart'
 import moment from 'moment'
 import { Check, Pie, Bag, Card, Clock, Frown } from './Icons'
-import { useInvoices } from '../../hooks/UseInvoices'
+import { useInvoices } from '../../hooks/useInvoices'
 
 const BillingDashboard = () => {
     const history = useHistory()
