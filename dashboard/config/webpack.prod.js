@@ -3,6 +3,8 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 const commonConfig = require('./webpack.common');
 const packageJson = require('../package.json');
 
+const domain = process.env.PRODUCTION_DOMAIN;
+
 const prodConfig = {
     mode: 'production',
     output: {
@@ -13,6 +15,10 @@ const prodConfig = {
         new ModuleFederationPlugin({
             name: 'dashboard',
             filename: 'remoteEntry.js',
+            remotes: {
+                billingdashboard: `billingdashboard@${domain}/billingdashboard/latest/remoteEntry.js`,
+                usermanagement: `usermanagement@${domain}/usermanagement/latest/remoteEntry.js`
+            },
             exposes: {
                 './DashboardApp': './src/bootstrap'
             },

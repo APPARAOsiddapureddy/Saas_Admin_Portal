@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import mockInvoices from '../mockData/invoices.json';
 
